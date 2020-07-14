@@ -58,6 +58,9 @@ namespace TeGe2
         public static DateTime DateTimePicoNegFreqDopAnt2;
         public static int FlagPassagemAnt2 = 0;
         public static int LockPicoRSSIAnt2 = 0;
+
+        //Dicionário com todas as EPCs das tags e as respectivas salas em que se encontram
+        public static Dictionary<string, string> tag_sala = new Dictionary<string, string>();
     }
 
 
@@ -66,6 +69,8 @@ namespace TeGe2
     {
         // Create an instance of the ImpinjReader class.
         static ImpinjReader reader = new ImpinjReader();
+
+        protected static List<ImpinjReader> readers = new List<ImpinjReader>();
 
         static void Main(string[] args)
         {
@@ -76,6 +81,16 @@ namespace TeGe2
                 Console.WriteLine("Programa iniciado");
                 GlobalData.filehandler.SetFileHandler();
                 GlobalData.filehandler.CreateFile();
+
+                //Dados de todas as leitores utilizadas
+                //string hostname1 = "speedwayR-10-9f-3f.local";
+                string hostname2 = "speedwayR-10-9f-c8.local";
+                //string hostname3 = "speedwayR-10-9f-bb.local";
+
+                //Adicionando todas as leitoras à lista
+                //readers.Add(new ImpinjReader(hostname1, "Reader #1"));
+                readers.Add(new ImpinjReader(hostname2, "Reader #2"));
+                //readers.Add(new ImpinjReader(hostname3, "Reader #3"));
 
                 GlobalData.FlagPrograma = 1;
 
@@ -254,6 +269,7 @@ namespace TeGe2
                         {
                             Console.WriteLine("**********************************");
                             Console.WriteLine("\nINDIVIDUO ENTROU NO AMBIENTE\n");
+                            Console.WriteLine("Leitora detectada: {0}", sender.Name);
                             Console.WriteLine("**********************************");
 
                             // Seta a flag que indica que esta ocorrendo uma transicao entre ambientes.
@@ -274,6 +290,7 @@ namespace TeGe2
                         {
                             Console.WriteLine("******************************");
                             Console.WriteLine("\nINDIVIDUO SAIU DO AMBIENTE\n");
+                            Console.WriteLine("Leitora detectada: {0}",sender.Name);
                             Console.WriteLine("******************************");
 
                             // Seta a flag que indica que esta ocorrendo uma transicao entre ambientes.
