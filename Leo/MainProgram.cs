@@ -105,7 +105,8 @@ namespace TeGe2
                     // Conecta com o reader.
                     // Troque o ReaderHostname em ConstantesReader.cs
                     // para o endereço IP ou hostname do seu reader.
-                    reader.Connect(ConstantesReader.ReaderHostname);
+                    //reader.Connect(ConstantesReader.ReaderHostname);
+                    reader.Connect();
 
                     // Get the default settings
                     // We'll use these as a starting point
@@ -313,6 +314,8 @@ namespace TeGe2
 
                             bool passagem = false;
 
+                            MonitoramentoSALA.transicao_sala(sender.Address, tag.Epc.ToString(), passagem);
+
                             // Seta a flag que indica que esta ocorrendo uma transicao entre ambientes.
                             GlobalData.FlagTrocaAmbiente = 1;
 
@@ -327,8 +330,10 @@ namespace TeGe2
                     GlobalData.LastSeen = DateTime.Now;
 
                     //Escreve nos arquivos os dados.
-                    GlobalData.filehandler.WriteToFile(tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString());
+                    //GlobalData.filehandler.WriteToFile(tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString());
+                    //MODIFICADO<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+                    //--------------------------------------------------------------------------------------------------------------------------------
                     // Escreve no prompt os dados obtidos.
                     //Console.WriteLine("EPC : {0},      Name:{1},     Antenna:{2},    Frequencia Doppler:{3},    RSSI:{4}", tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString());
 
