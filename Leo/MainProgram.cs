@@ -60,10 +60,16 @@ namespace TeGe2
         public static int LockPicoRSSIAnt2 = 0;
 
         //Dicionário com todas as EPCs das tags e as respectivas salas em que se encontram
-        public static Dictionary<string, string> tag_sala = new Dictionary<string, string>();
+        public static Dictionary<string, int> tag_sala = new Dictionary<string, int>();
     }
 
-
+    static class constantes
+    {
+        public const int AmbienteExterno = 0;
+        public const int SalaPrincipal = 1;
+        public const int SalaDeReunioes = 2;
+        public const int CorredorDeBaias = 3;
+    }
 
     class Program
     {
@@ -225,7 +231,7 @@ namespace TeGe2
                         }
 
                     }
-                    
+
                     // Checa se a antena 2 que está lendo.
                     if (tag.AntennaPortNumber == 2)
                     {
@@ -269,8 +275,12 @@ namespace TeGe2
                         {
                             Console.WriteLine("**********************************");
                             Console.WriteLine("\nINDIVIDUO ENTROU NO AMBIENTE\n");
-                            Console.WriteLine("Leitora detectada: {0}", sender.Name);
+                            Console.WriteLine("Leitora endereço: {0}", sender.Address);
                             Console.WriteLine("**********************************");
+
+                            bool passagem = true;
+
+                            MonitoramentoSALA.transicao_sala(sender.Address, tag.Epc.ToString(), passagem);
 
                             // Seta a flag que indica que esta ocorrendo uma transicao entre ambientes.
                             GlobalData.FlagTrocaAmbiente = 1;
@@ -290,8 +300,10 @@ namespace TeGe2
                         {
                             Console.WriteLine("******************************");
                             Console.WriteLine("\nINDIVIDUO SAIU DO AMBIENTE\n");
-                            Console.WriteLine("Leitora detectada: {0}",sender.Name);
+                            Console.WriteLine("Leitora endereço: {0}", sender.Address);
                             Console.WriteLine("******************************");
+
+                            bool passagem = false;
 
                             // Seta a flag que indica que esta ocorrendo uma transicao entre ambientes.
                             GlobalData.FlagTrocaAmbiente = 1;
@@ -308,7 +320,7 @@ namespace TeGe2
 
                     //Escreve nos arquivos os dados.
                     GlobalData.filehandler.WriteToFile(tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString());
-                    
+
                     // Escreve no prompt os dados obtidos.
                     //Console.WriteLine("EPC : {0},      Name:{1},     Antenna:{2},    Frequencia Doppler:{3},    RSSI:{4}", tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString());
 
@@ -345,7 +357,7 @@ namespace TeGe2
                 //Console.WriteLine("Tempo do pico negativo da FREQUENCIA Doppler da ANTENA 2 : {0}", GlobalData.TempoPicoNegFreqDopAnt2);
                 //Console.WriteLine("----------------------------------------------------------------------------------------------------------");
                 //}
-            }    
+            }
         }
     }
 
@@ -361,7 +373,7 @@ namespace TeGe2
             // Caso seja apertado Enter, a flag vai para zero e a thread eh encerrada.
             while (GlobalData.FlagPrograma == 1)
             {
-                
+
                 // Verifica se a flag que indica transicao de ambientes foi setada.
                 // Se sim, faz o reset das variaveis da TAG.
                 if (GlobalData.FlagTrocaAmbiente == 1)
@@ -422,8 +434,36 @@ namespace TeGe2
             GlobalData.TAGsReportsON = 1;
         }
     }
-    
-    
+
+    public class MonitoramentoSALA {
+        public static void transicao_sala(string leitora, string tag_epc, bool passagem)
+        {
+            switch (leitora)
+            {
+                case "speedwayR-10-9f-c8.local":
+                    if (passagem == true)
+                    {
+                        GlobalData.tag_sala[tag_epc] = constantes.SalaPrincipal;
+                        Console.WriteLine("Você está na Sala Principal");
+                    }
+                    else
+                    {
+                        GlobalData.tag_sala[tag_epc] = constantes.AmbienteExterno;
+                        Console.WriteLine("Você está no Ambiente Externo");
+                    }
+                    break;
+
+                case "speedwayR-10-9f-3f.local":
+                    
+                    break;
+
+                case "speedwayR-10-9f-bb.local":
+                    
+                    break;
+            }
+        }
+    }
+
     
     // Classe que lida com o armazenamento dos dados em arquivos.
     public class FileHandler
