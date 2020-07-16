@@ -89,12 +89,12 @@ namespace TeGe2
                 GlobalData.filehandler.CreateFile();
 
                 //Dados de todas as leitores utilizadas
-                //string hostname1 = "speedwayR-10-9f-3f.local";
-                string hostname2 = "speedwayR-10-9f-c8.local";
-                //string hostname3 = "speedwayR-10-9f-bb.local";
+                string hostname1 = "SpeedwayR-10-9F-3F.local";
+                string hostname2 = "SpeedwayR-10-9F-C8.local";
+                //string hostname3 = "SpeedwayR-10-9F-BB.local";
 
                 //Adicionando todas as leitoras à lista
-                //readers.Add(new ImpinjReader(hostname1, "Reader #1"));
+                readers.Add(new ImpinjReader(hostname1, "Reader #1"));
                 readers.Add(new ImpinjReader(hostname2, "Reader #2"));
                 //readers.Add(new ImpinjReader(hostname3, "Reader #3"));
 
@@ -440,7 +440,7 @@ namespace TeGe2
         {
             switch (leitora)
             {
-                case "speedwayR-10-9f-c8.local":
+                case "SpeedwayR-10-9F-C8.local":
                     if (passagem == true)
                     {
                         GlobalData.tag_sala[tag_epc] = constantes.SalaPrincipal;
@@ -453,12 +453,30 @@ namespace TeGe2
                     }
                     break;
 
-                case "speedwayR-10-9f-3f.local":
-                    
+                case "SpeedwayR-10-9F-3F.local":
+                    if (passagem == true)
+                    {
+                        GlobalData.tag_sala[tag_epc] = constantes.SalaDeReunioes;
+                        Console.WriteLine("Você está na Sala De Reuniões");
+                    }
+                    else
+                    {
+                        GlobalData.tag_sala[tag_epc] = constantes.SalaPrincipal;
+                        Console.WriteLine("Você está na Sala Principal");
+                    }
                     break;
 
-                case "speedwayR-10-9f-bb.local":
-                    
+                case "SpeedwayR-10-9F-BB.local":
+                    if (passagem == true)
+                    {
+                        GlobalData.tag_sala[tag_epc] = constantes.CorredorDeBaias;
+                        Console.WriteLine("Você está no Corredor De Baias");
+                    }
+                    else
+                    {
+                        GlobalData.tag_sala[tag_epc] = constantes.SalaPrincipal;
+                        Console.WriteLine("Você está na Sala Principal");
+                    }
                     break;
             }
         }
