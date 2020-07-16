@@ -100,61 +100,69 @@ namespace TeGe2
 
                 GlobalData.FlagPrograma = 1;
 
-                // Conecta com o reader.
-                // Troque o ReaderHostname em ConstantesReader.cs
-                // para o endereço IP ou hostname do seu reader.
-                reader.Connect(ConstantesReader.ReaderHostname);
+                foreach (ImpinjReader reader in readers)
+                {
+                    // Conecta com o reader.
+                    // Troque o ReaderHostname em ConstantesReader.cs
+                    // para o endereço IP ou hostname do seu reader.
+                    reader.Connect(ConstantesReader.ReaderHostname);
 
-                // Get the default settings
-                // We'll use these as a starting point
-                // and then modify the settings we're 
-                // interested in.
-                Settings settings = reader.QueryDefaultSettings();
+                    // Get the default settings
+                    // We'll use these as a starting point
+                    // and then modify the settings we're 
+                    // interested in.
+                    Settings settings = reader.QueryDefaultSettings();
 
-                // Tell the reader to include the
-                // RF doppler frequency in all tag reports. 
-                settings.Report.IncludeDopplerFrequency = true;
-                settings.Report.IncludePeakRssi = true;
-                settings.Report.IncludeAntennaPortNumber = true;
-                settings.Report.IncludeLastSeenTime = true;
+                    // Tell the reader to include the
+                    // RF doppler frequency in all tag reports. 
+                    settings.Report.IncludeDopplerFrequency = true;
+                    settings.Report.IncludePeakRssi = true;
+                    settings.Report.IncludeAntennaPortNumber = true;
+                    settings.Report.IncludeLastSeenTime = true;
 
-                // Use antenna #1 and #2
-                settings.Antennas.DisableAll();
-                settings.Antennas.GetAntenna(1).IsEnabled = true;
-                settings.Antennas.GetAntenna(2).IsEnabled = true;
+                    // Use antenna #1 and #2
+                    settings.Antennas.DisableAll();
+                    settings.Antennas.GetAntenna(1).IsEnabled = true;
+                    settings.Antennas.GetAntenna(2).IsEnabled = true;
 
-                //settings.Antennas.TxPowerMax = true;
-                //settings.Antennas.RxSensitivityMax = true;
-                //settings.Antennas.TxPowerInDbm = 20.0;
-                //settings.Antennas.RxSensitivityInDbm = -70.0;
+                    //settings.Antennas.TxPowerMax = true;
+                    //settings.Antennas.RxSensitivityMax = true;
+                    //settings.Antennas.TxPowerInDbm = 20.0;
+                    //settings.Antennas.RxSensitivityInDbm = -70.0;
 
-                // ReaderMode must be set to DenseReaderM8.
-                settings.ReaderMode = ReaderMode.DenseReaderM8;
+                    // ReaderMode must be set to DenseReaderM8.
+                    settings.ReaderMode = ReaderMode.DenseReaderM8;
 
-                // Apply the newly modified settings.
-                reader.ApplySettings(settings);
+                    // Apply the newly modified settings.
+                    reader.ApplySettings(settings);
 
-                //Inicializa a Thread que faz o monitoramento das TAGs
-                Thread MonitoraThread = new Thread(MonitoramentoTAG.MonitoraTag);
-                MonitoraThread.Start();
+                    //Inicializa a Thread que faz o monitoramento das TAGs
+                    Thread MonitoraThread = new Thread(MonitoramentoTAG.MonitoraTag);
+                    MonitoraThread.Start();
 
-                // Assign the TagsReported event handler.
-                // This specifies which method to call
-                // when tags reports are available.
-                reader.TagsReported += AnalisaDadosTAG;
+                    // Assign the TagsReported event handler.
+                    // This specifies which method to call
+                    // when tags reports are available.
+                    reader.TagsReported += AnalisaDadosTAG;
 
-                // Start reading.
-                reader.Start();
+                    // Start reading.
+                    reader.Start();
+                }
 
                 // Wait for the user to press enter.
                 Console.WriteLine("Pressione Enter para sair do programa.\n");
                 Console.ReadLine();
 
-                // Stop reading.
-                reader.Stop();
 
-                // Disconnect from the reader.
-                reader.Disconnect();
+                foreach (ImpinjReader reader in readers)
+                {
+                    // Stop reading.
+                    reader.Stop();
+
+                    // Disconnect from the reader.
+                    reader.Disconnect();
+                }
+                
                 GlobalData.FlagPrograma = 0;
             }
             catch (OctaneSdkException e)

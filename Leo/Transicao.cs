@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Impinj.OctaneSDK;
+using Impinj.OctaneSdk;
 using System.Security.Cryptography.X509Certificates;
 using System.Linq;
 using System.Text;
