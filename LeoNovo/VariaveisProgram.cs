@@ -30,7 +30,7 @@ namespace TeGe2
         public static int FiltroPassaBaixaRSSI = -58;
 
         // Variavel que armazena o valor de RSSI que indica que alguém passou na frente da antena.
-        public static int IndicadorRSSIPassagem = -47;
+        public static int IndicadorRSSIPassagem = -50;
 
         // Variavel que armazena o DateTime da ultima vez que a TAG foi lida
         public static DateTime LastSeen = DateTime.Now;
