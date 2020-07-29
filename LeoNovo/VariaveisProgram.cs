@@ -74,9 +74,9 @@ namespace TeGe2
         // Adicione as novas TAGs colocando seu EPC e o nome relacionado.
         public static List<Tags_TG> ListaTAGs = new List<Tags_TG>
         {
-            new Tags_TG{EPC = "E200 001B 2609 0146 2580 7745", Nome = "Leonardo" ,Ambiente = 1},
-            new Tags_TG{EPC = "E200 001B 2609 0146 2700 7715", Nome = "Fernanda" ,Ambiente = 1},
-            new Tags_TG{EPC = "E200 001B 2609 0146 2770 76FD", Nome = "Kenneth"  ,Ambiente = 1},
+            new Tags_TG{EPC = "E200 001B 2609 0146 2580 7745", Nome = "Leonardo" ,Ambiente = 0},
+            new Tags_TG{EPC = "E200 001B 2609 0146 2700 7715", Nome = "Fernanda" ,Ambiente = 0},
+            new Tags_TG{EPC = "E200 001B 2609 0146 2770 76FD", Nome = "Kenneth"  ,Ambiente = 0},
             new Tags_TG{EPC = "E200 001B 2609 0146 2630 7739", Nome = "Jhon"     ,Ambiente = 0},
             new Tags_TG{EPC = "E200 001B 2609 0146 2780 76F5", Nome = "Marcelo"  ,Ambiente = 0},
             new Tags_TG{EPC = "E200 001B 2609 0146 2710 7719", Nome = "Gabriela" ,Ambiente = 0},
