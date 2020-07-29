@@ -74,9 +74,14 @@ namespace TeGe2
         // Adicione as novas TAGs colocando seu EPC e o nome relacionado.
         public static List<Tags_TG> ListaTAGs = new List<Tags_TG>
         {
-            new Tags_TG{EPC = "E200 001B 2609 0146 2580 7745", Nome = "Leonardo", Ambiente = 1},
-            new Tags_TG{EPC = "E200 001B 2609 0146 2700 7715", Nome = "Fernanda", Ambiente = 1},
-            new Tags_TG{EPC = "E200 001B 2609 0146 2770 76FD", Nome = "Kenneth" , Ambiente = 1}
+            new Tags_TG{EPC = "E200 001B 2609 0146 2580 7745", Nome = "Leonardo" ,Ambiente = 1},
+            new Tags_TG{EPC = "E200 001B 2609 0146 2700 7715", Nome = "Fernanda" ,Ambiente = 1},
+            new Tags_TG{EPC = "E200 001B 2609 0146 2770 76FD", Nome = "Kenneth"  ,Ambiente = 1},
+            new Tags_TG{EPC = "E200 001B 2609 0146 2630 7739", Nome = "Jhon"     ,Ambiente = 0},
+            new Tags_TG{EPC = "E200 001B 2609 0146 2780 76F5", Nome = "Marcelo"  ,Ambiente = 0},
+            new Tags_TG{EPC = "E200 001B 2609 0146 2710 7719", Nome = "Gabriela" ,Ambiente = 0},
+            new Tags_TG{EPC = "E200 001B 2609 0146 2650 772D", Nome = "Julia"    ,Ambiente = 0},
+            new Tags_TG{EPC = "E200 001B 2609 0145 2880 76A4", Nome = "Guilherme",Ambiente = 0}
         };
 
         // Cria dicionarios dos ambientes para fazer a contagem de pessoas por ambiente e inicializa eles.
@@ -88,7 +93,12 @@ namespace TeGe2
         {
             { "E200 001B 2609 0146 2580 7745", ListaTAGs[0] },
             { "E200 001B 2609 0146 2700 7715", ListaTAGs[1] },
-            { "E200 001B 2609 0146 2770 76FD", ListaTAGs[2] }
+            { "E200 001B 2609 0146 2770 76FD", ListaTAGs[2] },
+            { "E200 001B 2609 0146 2630 7739", ListaTAGs[3] },
+            { "E200 001B 2609 0146 2780 76F5", ListaTAGs[4] },
+            { "E200 001B 2609 0146 2710 7719", ListaTAGs[5] },
+            { "E200 001B 2609 0146 2650 772D", ListaTAGs[6] },
+            { "E200 001B 2609 0145 2880 76A4", ListaTAGs[7] }
         };
     }
 
