@@ -86,11 +86,7 @@ namespace TeGe2
 
         // Cria dicionarios dos ambientes para fazer a contagem de pessoas por ambiente e inicializa eles.
         // Nesse caso, todos estao sendo inicializados na sala principal.
-        public static Dictionary<string, Tags_TG> DictAmbienteExterno = new Dictionary<string, Tags_TG>();
-        public static Dictionary<string, Tags_TG> DictSalaReunioes = new Dictionary<string, Tags_TG>();
-        public static Dictionary<string, Tags_TG> DictCorredorBaias = new Dictionary<string, Tags_TG>();
-        public static Dictionary<string, Tags_TG> DictSalaPrincipal = new Dictionary<string, Tags_TG>()
-        {
+        public static Dictionary<string, Tags_TG> DictAmbienteExterno = new Dictionary<string, Tags_TG>(){
             { "E200 001B 2609 0146 2580 7745", ListaTAGs[0] },
             { "E200 001B 2609 0146 2700 7715", ListaTAGs[1] },
             { "E200 001B 2609 0146 2770 76FD", ListaTAGs[2] },
@@ -100,6 +96,9 @@ namespace TeGe2
             { "E200 001B 2609 0146 2650 772D", ListaTAGs[6] },
             { "E200 001B 2609 0145 2880 76A4", ListaTAGs[7] }
         };
+        public static Dictionary<string, Tags_TG> DictSalaReunioes = new Dictionary<string, Tags_TG>();
+        public static Dictionary<string, Tags_TG> DictCorredorBaias = new Dictionary<string, Tags_TG>();
+        public static Dictionary<string, Tags_TG> DictSalaPrincipal = new Dictionary<string, Tags_TG>();
     }
 
 
