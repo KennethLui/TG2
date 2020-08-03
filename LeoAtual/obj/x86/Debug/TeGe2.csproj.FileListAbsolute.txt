@@ -1,0 +1,84 @@
+C:\Users\kenne\Source\Repos\KennethLui\TG2\Leo\obj\x86\Debug\TeGe2.csprojAssemblyReference.cache
+C:\Users\kenne\Source\Repos\KennethLui\TG2\Leo\obj\x86\Debug\TeGe2.csproj.CoreCompileInputs.cache
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\bin\Debug\RfDoppler.exe.config
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\bin\Debug\RfDoppler.exe
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\bin\Debug\RfDoppler.pdb
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\bin\Debug\LLRP.Impinj.dll
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\bin\Debug\LLRP.dll
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\bin\Debug\Impinj.OctaneSdk.pdb
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\obj\x86\Debug\TeGe2.csproj.CopyComplete
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\obj\x86\Debug\RfDoppler.exe
+C:\Users\kenne\source\repos\KennethLui\TG2\Leo\obj\x86\Debug\RfDoppler.pdb
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\bin\Debug\RfDoppler.exe.config
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\bin\Debug\RfDoppler.exe
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\bin\Debug\RfDoppler.pdb
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\bin\Debug\LLRP.Impinj.dll
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\bin\Debug\LLRP.dll
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\bin\Debug\Impinj.OctaneSdk.pdb
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\obj\x86\Debug\TeGe2.csprojAssemblyReference.cache
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\obj\x86\Debug\TeGe2.csproj.CoreCompileInputs.cache
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\obj\x86\Debug\TeGe2.csproj.CopyComplete
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\obj\x86\Debug\RfDoppler.exe
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\TG2-master\Leo\obj\x86\Debug\RfDoppler.pdb
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\bin\Debug\RfDoppler.exe.config
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\bin\Debug\RfDoppler.exe
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\bin\Debug\RfDoppler.pdb
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\bin\Debug\LLRP.Impinj.dll
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\bin\Debug\LLRP.dll
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\bin\Debug\Impinj.OctaneSdk.pdb
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\obj\x86\Debug\TeGe2.csprojAssemblyReference.cache
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\obj\x86\Debug\TeGe2.csproj.CoreCompileInputs.cache
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\obj\x86\Debug\TeGe2.csproj.CopyComplete
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\obj\x86\Debug\RfDoppler.exe
+C:\Users\leona\Documents\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\Leo\obj\x86\Debug\RfDoppler.pdb
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\bin\Debug\RfDoppler.exe.config
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\bin\Debug\RfDoppler.exe
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\bin\Debug\RfDoppler.pdb
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\bin\Debug\LLRP.Impinj.dll
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\bin\Debug\LLRP.dll
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\bin\Debug\Impinj.OctaneSdk.pdb
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\TeGe2.csprojAssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\TeGe2.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\TeGe2.csproj.CopyComplete
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\RfDoppler.exe
+C:\Users\leona\OneDrive\Documentos\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\RfDoppler.pdb
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\bin\Debug\RfDoppler.exe.config
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\bin\Debug\RfDoppler.exe
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\bin\Debug\RfDoppler.pdb
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\bin\Debug\LLRP.Impinj.dll
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\bin\Debug\LLRP.dll
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\bin\Debug\Impinj.OctaneSdk.pdb
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\TeGe2.csprojAssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\TeGe2.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\TeGe2.csproj.CopyComplete
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\RfDoppler.exe
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Kenneth\GithubsKen\TG2-master\TG2-master\LeoNovo\obj\x86\Debug\RfDoppler.pdb
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\bin\Debug\RfDoppler.exe.config
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\bin\Debug\RfDoppler.exe
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\bin\Debug\RfDoppler.pdb
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\bin\Debug\LLRP.Impinj.dll
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\bin\Debug\LLRP.dll
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\bin\Debug\Impinj.OctaneSdk.pdb
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\obj\x86\Debug\TeGe2.csprojAssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\obj\x86\Debug\TeGe2.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\obj\x86\Debug\TeGe2.csproj.CopyComplete
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\obj\x86\Debug\RfDoppler.exe
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoAtual\obj\x86\Debug\RfDoppler.pdb
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\bin\Debug\RfDoppler.exe.config
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\bin\Debug\RfDoppler.exe
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\bin\Debug\RfDoppler.pdb
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\bin\Debug\LLRP.Impinj.dll
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\bin\Debug\LLRP.dll
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\bin\Debug\Impinj.OctaneSdk.pdb
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\obj\x86\Debug\TeGe2.csprojAssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\obj\x86\Debug\TeGe2.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\obj\x86\Debug\TeGe2.csproj.CopyComplete
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\obj\x86\Debug\RfDoppler.exe
+C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\obj\x86\Debug\RfDoppler.pdb
