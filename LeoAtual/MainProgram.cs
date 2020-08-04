@@ -42,14 +42,14 @@ namespace TeGe2
                 //}
                 
                 // Hostname de todas as leitores utilizadas
-                //string hostname1 = "SpeedwayR-10-9F-3F.local";
-                //string hostname2 = "SpeedwayR-10-9F-C8.local";
-                string hostname3 = "SpeedwayR-10-9F-BB.local";
+                string hostname1 = "SpeedwayR-10-9F-3F.local";
+                string hostname2 = "SpeedwayR-10-9F-C8.local";
+                //string hostname3 = "SpeedwayR-10-9F-BB.local";
 
                 // Adicionando todas as leitoras à lista
-                //readers.Add(new ImpinjReader(hostname1, "Reader #1"));
-                //readers.Add(new ImpinjReader(hostname2, "Reader #2"));
-                readers.Add(new ImpinjReader(hostname3, "Reader #3"));
+                readers.Add(new ImpinjReader(hostname1, "Reader #1"));
+                readers.Add(new ImpinjReader(hostname2, "Reader #2"));
+                //readers.Add(new ImpinjReader(hostname3, "Reader #3"));
 
                 GlobalData.FlagPrograma = 1;
 
@@ -315,7 +315,7 @@ namespace TeGe2
                             GlobalData.LastSeen = DateTime.Now;
 
                             //Escreve nos arquivos os dados.
-                            GlobalData.filehandler.WriteToFile(tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString(), LeitoraUm.ContadorPassagemAnt1.ToString(), LeitoraUm.ContadorPassagemAnt2.ToString());
+                            //GlobalData.filehandler.WriteToFile(tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString(), LeitoraUm.ContadorPassagemAnt1.ToString(), LeitoraUm.ContadorPassagemAnt2.ToString());
                         }
                     }
                     break;
@@ -501,7 +501,7 @@ namespace TeGe2
                             GlobalData.LastSeen = DateTime.Now;
 
                             //Escreve nos arquivos os dados.
-                            GlobalData.filehandler.WriteToFile(tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString(), LeitoraDois.ContadorPassagemAnt1.ToString(), LeitoraDois.ContadorPassagemAnt2.ToString());
+                            //GlobalData.filehandler.WriteToFile(tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString(), LeitoraDois.ContadorPassagemAnt1.ToString(), LeitoraDois.ContadorPassagemAnt2.ToString());
                         }
                     }
                     break;
@@ -687,9 +687,13 @@ namespace TeGe2
                             GlobalData.LastSeen = DateTime.Now;
 
                             //Escreve nos arquivos os dados.
-                            GlobalData.filehandler.WriteToFile(tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString(), LeitoraTres.ContadorPassagemAnt1.ToString(), LeitoraTres.ContadorPassagemAnt2.ToString());
+                            //GlobalData.filehandler.WriteToFile(tag.Epc.ToString(), sender.Name, tag.AntennaPortNumber, tag.RfDopplerFrequency.ToString("0.00"), tag.PeakRssiInDbm.ToString(), LeitoraTres.ContadorPassagemAnt1.ToString(), LeitoraTres.ContadorPassagemAnt2.ToString());
                         }
                     }
+                    break;
+
+                default:
+                    Console.Write("Caso não identificado");
                     break;
             }
         }
@@ -789,6 +793,10 @@ namespace TeGe2
 
                     // Reseta a variavel que indica a troca de ambiente da LEITORA TRES.
                     LeitoraTres.FlagTrocaAmbiente = 0;
+                    break;
+
+                default:
+                    Console.Write("Caso não identificado");
                     break;
             }
         }

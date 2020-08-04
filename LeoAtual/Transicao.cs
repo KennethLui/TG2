@@ -84,6 +84,10 @@ namespace TeGe2
 						TransicaoTags.DisplayAmbientes();
 					}
 					break;
+
+				default:
+					Console.Write("Caso não identificado");
+					break;
 			}
 		}
 
@@ -127,6 +131,10 @@ namespace TeGe2
 						Console.WriteLine("\n*Desacionamento do ventilador no Corredor de Baias*\n");
 						GlobalData.AcionamtCorredorBaias = 0;
 					}
+					break;
+
+				default:
+					Console.Write("Caso não identificado");
 					break;
 			}
 		}
@@ -175,6 +183,10 @@ namespace TeGe2
 						Console.WriteLine("\n*Acionamento do ventilador no Corredor de Baias*\n");
 						GlobalData.AcionamtCorredorBaias = 1;
 					}
+					break;
+
+				default:
+					Console.Write("Caso não identificado");
 					break;
 			}
 		}
