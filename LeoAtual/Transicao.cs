@@ -15,8 +15,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-
+using TeGe;
 
 namespace TeGe2
 {
@@ -110,6 +109,7 @@ namespace TeGe2
 					{
 						Console.WriteLine("\n*Desacionamento do ventilador na Sala Principal*\n");
 						GlobalData.AcionamtSalaPrincipal = 0;
+						SerialCom.Controle_Ar("Sala Principal");
 					}
 					break;
 
@@ -120,6 +120,7 @@ namespace TeGe2
 					{
 						Console.WriteLine("\n*Desacionamento do ventilador na Sala de Reunioes*\n");
 						GlobalData.AcionamtSalaReunioes = 0;
+						SerialCom.Controle_Ar("Sala Reuniões");
 					}
 					break;
 
@@ -130,6 +131,7 @@ namespace TeGe2
 					{
 						Console.WriteLine("\n*Desacionamento do ventilador no Corredor de Baias*\n");
 						GlobalData.AcionamtCorredorBaias = 0;
+						SerialCom.Controle_Ar("Corredor de Baias");
 					}
 					break;
 
@@ -160,6 +162,7 @@ namespace TeGe2
 					{
 						Console.WriteLine("\n*Acionamento do ventilador na Sala Principal*\n");
 						GlobalData.AcionamtSalaPrincipal = 1;
+						SerialCom.Controle_Ar("Sala Principal");
 					}
 					break;
 
@@ -171,6 +174,7 @@ namespace TeGe2
 					{
 						Console.WriteLine("\n*Acionamento do ventilador na Sala de Reunioes*\n");
 						GlobalData.AcionamtSalaReunioes = 1;
+						SerialCom.Controle_Ar("Sala Reuniões");
 					}
 					break;
 
@@ -182,6 +186,7 @@ namespace TeGe2
 					{
 						Console.WriteLine("\n*Acionamento do ventilador no Corredor de Baias*\n");
 						GlobalData.AcionamtCorredorBaias = 1;
+						SerialCom.Controle_Ar("Corredor de Baias");
 					}
 					break;
 

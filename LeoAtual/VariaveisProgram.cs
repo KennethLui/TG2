@@ -76,6 +76,11 @@ namespace TeGe2
         public static Dictionary<string, Tags_TG> DictSalaReunioes = new Dictionary<string, Tags_TG>();
         public static Dictionary<string, Tags_TG> DictCorredorBaias = new Dictionary<string, Tags_TG>();
         public static Dictionary<string, Tags_TG> DictSalaPrincipal = new Dictionary<string, Tags_TG>();
+
+        public static int Contador_SalaReunioes = DictSalaReunioes.Count;
+        public static int Contador_SalaPrincipal = DictSalaPrincipal.Count;
+        public static int Contador_CorredorBaias = DictCorredorBaias.Count;
+
     }
 
 

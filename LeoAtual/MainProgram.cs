@@ -12,6 +12,7 @@ using System.Text;
 using System.IO;
 using System.Threading;
 using System.Security.Cryptography.X509Certificates;
+using TeGe;
 
 namespace TeGe2
 {
@@ -813,7 +814,6 @@ namespace TeGe2
             tag.ReportON = true;
         }
     }
-
 
     
     // Classe que lida com o armazenamento dos dados em arquivos.
