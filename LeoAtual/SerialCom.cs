@@ -28,8 +28,8 @@ namespace TeGe
 
             estado = 1;
 
-            while (GlobalData.FlagPrograma == 1)
-            {
+            //while (GlobalData.FlagPrograma == 1)
+            //{
                 //Console.WriteLine("Ligar: <0> \t Desligar: <1> \t Sair: <quit>");
                 //comando = Console.ReadLine();
 
@@ -60,7 +60,7 @@ namespace TeGe
                         //Console.WriteLine("Comando não identificado");
                         break;
                 }
-            }
+            //}
             _serialPort.Close();
         }
 

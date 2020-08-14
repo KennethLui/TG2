@@ -82,3 +82,17 @@ C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoT
 C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\obj\x86\Debug\TeGe2.csproj.CopyComplete
 C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\obj\x86\Debug\RfDoppler.exe
 C:\Users\leona\OneDrive\Documentos\UnB\12º Semestre\TG2\TG2-LeoKenneth\Leo\LeoTresLeitoras\obj\x86\Debug\RfDoppler.pdb
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\bin\Debug\RfDoppler.exe.config
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\bin\Debug\RfDoppler.exe
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\bin\Debug\RfDoppler.pdb
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\bin\Debug\System.IO.Ports.dll
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\bin\Debug\LLRP.Impinj.dll
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\bin\Debug\LLRP.dll
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\bin\Debug\Impinj.OctaneSdk.pdb
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\bin\Debug\System.IO.Ports.xml
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\obj\x86\Debug\TeGe2.csprojAssemblyReference.cache
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\obj\x86\Debug\TeGe2.csproj.CoreCompileInputs.cache
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\obj\x86\Debug\TeGe2.csproj.CopyComplete
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\obj\x86\Debug\RfDoppler.exe
+C:\Users\kenne\source\repos\KennethLui\TG2\LeoAtual\obj\x86\Debug\RfDoppler.pdb
