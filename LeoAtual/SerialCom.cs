@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.IO.Ports;
 using TeGe2;
+using System.Security.Cryptography;
 
 namespace TeGe
 {
@@ -14,7 +15,7 @@ namespace TeGe
         static SerialPort _serialPort;
         public static void Controle_Ar(string sala)
         {
-            //string comando;
+            string comando;
 
             _serialPort = new SerialPort();
             _serialPort.PortName = "COM3";
@@ -30,43 +31,47 @@ namespace TeGe
 
             //while (GlobalData.FlagPrograma == 1)
             //{
-                //Console.WriteLine("Ligar: <0> \t Desligar: <1> \t Sair: <quit>");
-                //comando = Console.ReadLine();
+            //Console.WriteLine("Ligar: <0> \t Desligar: <1> \t Sair: <quit>");
+            //comando = Console.ReadLine();
 
-                //Contador_SalaReunioes = GlobalData.DictSalaReunioes.Count;
-                //Contador_SalaPrincipal = GlobalData.DictSalaPrincipal.Count;
-                //Contador_CorredorBaias = GlobalData.DictCorredorBaias.Count;
+            //Contador_SalaReunioes = GlobalData.DictSalaReunioes.Count;
+            //Contador_SalaPrincipal = GlobalData.DictSalaPrincipal.Count;
+            //Contador_CorredorBaias = GlobalData.DictCorredorBaias.Count;
 
-                switch (sala)
-                {
-                    case "Sala Principal":
-                        //Console.WriteLine("Ligar LED");
-                        estado = GlobalData.AcionamtSalaPrincipal;
-                        _serialPort.Write(estado.ToString());
-                        break;
+            switch (sala)
+            {
+                case "Sala Principal":
+                    //Console.WriteLine("Ligar LED");
+                    estado = GlobalData.AcionamtSalaPrincipal;
+                    comando = EscreveSerial("P", estado.ToString());
+                    _serialPort.Write(comando);
+                    break;
 
-                    case "Sala Reuniões":
-                        //Console.WriteLine("Ligar LED");
-                        estado = GlobalData.AcionamtSalaReunioes;
-                        _serialPort.Write(estado.ToString());
-                        break;
+                case "Sala Reuniões":
+                    //Console.WriteLine("Ligar LED");
+                    estado = GlobalData.AcionamtSalaReunioes;
+                    comando = EscreveSerial("R", estado.ToString());
+                    _serialPort.Write(comando);
+                    break;
 
-                    case "Corredor de Baias":
-                        estado = GlobalData.AcionamtCorredorBaias;
-                        _serialPort.Write(estado.ToString());
-                        break;
+                case "Corredor de Baias":
+                    estado = GlobalData.AcionamtCorredorBaias;
+                    comando = EscreveSerial("C", estado.ToString());
+                    _serialPort.Write(comando);
+                    break;
 
-                    default:
-                        //Console.WriteLine("Comando não identificado");
-                        break;
-                }
+                default:
+                    //Console.WriteLine("Comando não identificado");
+                    break;
+            }
             //}
             _serialPort.Close();
         }
 
-        public static void EscreveSerial(string sala,string estado)
+        public static string EscreveSerial(string sala, string estado)
         {
-            _serialPort.Write(estado);
+            String cmd = "<" + sala + "," + estado + ">";
+            return cmd;
         }
     }
 }
