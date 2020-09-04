@@ -22,9 +22,8 @@ int LED_CORREDOR_DE_BAIAS = 4;
 
 void setup() {
     Serial.begin(9600);
-    Serial.println("This demo expects 3 pieces of data - text, an integer and a floating point value");
-    Serial.println("Enter data in this style <HelloWorld, 12, 24.7>  ");
-    Serial.println();
+    //Serial.println("Formato do dado: <HelloWorld, 12, 24.7>  ");
+    //Serial.println();
 }
 
 //============
@@ -36,7 +35,7 @@ void loop() {
             // this temporary copy is necessary to protect the original data
             //   because strtok() used in parseData() replaces the commas with \0
         parseData();
-        showParsedData();
+        //showParsedData();
         correspondencia();
         ativa_rele();
         newData = false;
@@ -127,25 +126,25 @@ void correspondencia(){
 void ativa_rele(){
     switch(N_SALA){
         case 0:
-          Serial.println("ATIVO SALA REUNIÕES");
-          estado(ESTADO);
+          //Serial.println("ATIVO SALA REUNIÕES");
+          //estado(ESTADO);
           digitalWrite(LED_SALA_DE_REUNIOES,ESTADO);
           break;
 
         case 1:
-          Serial.println("ATIVO SALA PRINCIPAL");
-          estado(ESTADO);
+          //Serial.println("ATIVO SALA PRINCIPAL");
+          //estado(ESTADO);
           digitalWrite(LED_SALA_PRINCIPAL,ESTADO);
           break;
 
         case 2:
-          Serial.println("ATIVO CORREDOR DE BAIAS");
-          estado(ESTADO);
+          //Serial.println("ATIVO CORREDOR DE BAIAS");
+          //estado(ESTADO);
           digitalWrite(LED_CORREDOR_DE_BAIAS,ESTADO);
           break;
 
         default:
-          Serial.println("CASO NÃO IDENTIFICADO");
+          //Serial.println("CASO NÃO IDENTIFICADO");
           break;
       }
   }
